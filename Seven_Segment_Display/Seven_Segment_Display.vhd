@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------------
+-- File:				Seven_Segment_Display.vhd
+-- Description:	This is an implementation of a Seven Segment Display using a 
+-- 					using Case Statement or behaviourial modelling
+--						Seven display consist of 7 led segments to display 0 to 6 which 
+--						will be named as  A to G.
+--						We will design a BCD to 7 Segment Decoder converts which converts 
+--						4 bit binary to 7 bit control signal which can be displayed on 
+--						7 segment display. 
+--------------------------------------------------------------------------------------
+-- Libraries
+
+LIBRARY 	IEEE;
+USE 		IEEE.STD_LOGIC_1164.ALL;
+ 
+-- Entity Declaration
+-- This is where all the Inputs & Outputs are specified, the BCD bit will be stored in 
+-- BCDNos and 7 LEDs on the Segment are stored in DisplayLEDs
+ENTITY Seven_Segment_Display IS
+	PORT(
+			BCDNos			: IN STD_LOGIC_VECTOR  (3 DOWNTO 0);
+			DisplayLEDs		: OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
+			);
+	END Seven_Segment_Display;
+	
+-- Architecture Body
+-- This is where we describe the behavior of the Seven Segment Display
+ARCHITECTURE BEHAVIOURAL OF Seven_Segment_Display IS
+ 
+	BEGIN
+		PROCESS(BCDNos)
+		BEGIN
+			CASE BCDNos IS
+				WHEN "0000" =>
+					DisplayLEDs <= "1111110"; ---0
+				
+				WHEN "0001" =>
+					DisplayLEDs <= "0110000"; ---1
+	
+				WHEN "0010" =>
+					DisplayLEDs <= "1101101"; ---2
+				
+				WHEN "0011" =>
+					DisplayLEDs <= "1111001"; ---3
+				
+				WHEN "0100" =>
+					DisplayLEDs <= "0010011"; ---4
+				
+				when "0101" =>
+					DisplayLEDs <= "1011011"; ---5
+				
+				when "0110" =>
+					DisplayLEDs <= "1011111"; ---6
+				
+				when "0111" =>
+					DisplayLEDs <= "1110000"; ---7
+				
+				when "1000" =>
+					DisplayLEDs <= "1111111"; ---8
+				
+				when "1001" =>
+					DisplayLEDs <= "1111011"; ---9
+				
+				when others =>
+					DisplayLEDs <= "0000000"; ---null
+			END CASE;
+
+	END PROCESS;
+ 
+END BEHAVIOURAL;
+ 

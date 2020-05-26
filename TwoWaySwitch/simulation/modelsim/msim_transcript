@@ -1,0 +1,69 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do TwoWaySwitch_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/ajayb/QuartusProjects/TwoWaySwitch/two_way_switch.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:48 on May 26,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ajayb/QuartusProjects/TwoWaySwitch/two_way_switch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity two_way_switch
+# -- Compiling architecture Behavioral of two_way_switch
+# End time: 16:19:48 on May 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/ajayb/QuartusProjects/TwoWaySwitch/tb_two_way_switch.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:48 on May 26,2020
+# vcom -reportprogress 300 -93 -work work C:/Users/ajayb/QuartusProjects/TwoWaySwitch/tb_two_way_switch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_two_way_switch
+# -- Compiling architecture Behavioral of tb_two_way_switch
+# End time: 16:19:48 on May 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  test
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" test 
+# Start time: 16:19:48 on May 26,2020
+# ** Error: (vsim-3170) Could not find 'test'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/19.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA_lite/19.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA_lite/19.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA_lite/19.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA_lite/19.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA_lite/19.1/modelsim_ase/altera/vhdl/cycloneive
+#             C:/Users/ajayb/QuartusProjects/TwoWaySwitch/simulation/modelsim/rtl_work
+#             C:/Users/ajayb/QuartusProjects/TwoWaySwitch/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TwoWaySwitch_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.tb_two_way_switch
+# vsim work.tb_two_way_switch 
+# Start time: 16:19:48 on May 26,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_two_way_switch(behavioral)
+# Loading work.two_way_switch(behavioral)
+add wave -position insertpoint  \
+sim:/tb_two_way_switch/A \
+sim:/tb_two_way_switch/B \
+sim:/tb_two_way_switch/OP
+run -all
+# Break key hit
+# End time: 16:20:20 on May 26,2020, Elapsed time: 0:00:32
+# Errors: 1, Warnings: 0

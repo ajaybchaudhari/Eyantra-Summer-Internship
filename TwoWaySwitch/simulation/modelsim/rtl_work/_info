@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ajayb/QuartusProjects/TwoWaySwitch/simulation/modelsim
+Etb_two_way_switch
+Z1 w1590490043
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ajayb/QuartusProjects/TwoWaySwitch/tb_two_way_switch.vhd
+Z5 FC:/Users/ajayb/QuartusProjects/TwoWaySwitch/tb_two_way_switch.vhd
+l0
+L4
+VDCn2faP;Hd[00HKEcc[;52
+!s100 Km[CJdGYQKGk=mR_D42<J2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1590490188
+!i10b 1
+Z8 !s108 1590490188.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ajayb/QuartusProjects/TwoWaySwitch/tb_two_way_switch.vhd|
+Z10 !s107 C:/Users/ajayb/QuartusProjects/TwoWaySwitch/tb_two_way_switch.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 17 tb_two_way_switch 0 22 DCn2faP;Hd[00HKEcc[;52
+l18
+L6
+VVXbOmAj72JO5Y0oYn5kzS2
+!s100 MNLj4C7^Lg2ECzW63D_0`3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etwo_way_switch
+Z13 w1589897812
+R2
+R3
+R0
+Z14 8C:/Users/ajayb/QuartusProjects/TwoWaySwitch/two_way_switch.vhd
+Z15 FC:/Users/ajayb/QuartusProjects/TwoWaySwitch/two_way_switch.vhd
+l0
+L4
+V_abgGPa_o5W^^K7@im4AG0
+!s100 ]lF09[A>DTWNTJHmV4kRk1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/ajayb/QuartusProjects/TwoWaySwitch/two_way_switch.vhd|
+Z17 !s107 C:/Users/ajayb/QuartusProjects/TwoWaySwitch/two_way_switch.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 14 two_way_switch 0 22 _abgGPa_o5W^^K7@im4AG0
+l13
+L12
+VO7=a[WBD@:P]jnh_e1XJB2
+!s100 ILN3i?>nbAh>M=fDJ5B7B3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

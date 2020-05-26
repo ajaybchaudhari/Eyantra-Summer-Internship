@@ -1,0 +1,58 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ 
+ENTITY TESTBENCHADDER IS
+END TESTBENCHADDER;
+ 
+ARCHITECTURE BEHAVIOR OF TESTBENCHADDER IS
+ 
+	COMPONENT RIPPLECARRYADDER
+		PORT ( 
+				A 			: IN STD_LOGIC_VECTOR 	(1 DOWNTO 0);
+				B 			: IN STD_LOGIC_VECTOR 	(1 DOWNTO 0);
+				CIN 		: IN STD_LOGIC;
+				S 			: OUT STD_LOGIC_VECTOR 	(1 DOWNTO 0);
+				COUT 		: OUT STD_LOGIC
+				);
+	END COMPONENT;
+ 
+		SIGNAL A 	: STD_LOGIC_VECTOR(1 DOWNTO 0) := (OTHERS => '0');
+		SIGNAL B 	: STD_LOGIC_VECTOR(1 DOWNTO 0) := (OTHERS => '0');
+		SIGNAL CIN 	: STD_LOGIC := '0';
+		 
+	
+		SIGNAL S 	: STD_LOGIC_VECTOR(1 DOWNTO 0);
+		SIGNAL COUT : STD_LOGIC;
+ 
+		BEGIN
+		 
+		UUT: RIPPLECARRYADDER PORT MAP (
+						A 		=> A,
+						B 		=> B,
+						CIN 	=> CIN,
+						S 		=> S,
+						COUT 	=> COUT
+						);
+						 
+		-- STIMULUS PROCESS
+		STIM_PROC: PROCESS
+		BEGIN
+		-- HOLD RESET STATE FOR 100 NS.
+			A <= "01";
+			B <= "11";
+			WAIT FOR 100 ns ;
+			A <= "11";
+			B <= "11";
+			CIN <= '1';
+			WAIT FOR 100 ns ;
+			A <= "10";
+			B <= "01";
+			WAIT FOR 100 ns ;
+			A <= "00";
+			B <= "11";
+					 
+		WAIT;
+		 
+		END PROCESS;
+ 
+END;

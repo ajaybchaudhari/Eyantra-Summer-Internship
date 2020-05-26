@@ -1,0 +1,583 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("BCDNos")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("BCDNos[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "BCDNos";
+}
+
+SIGNAL("BCDNos[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "BCDNos";
+}
+
+SIGNAL("BCDNos[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "BCDNos";
+}
+
+SIGNAL("BCDNos[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "BCDNos";
+}
+
+SIGNAL("DisplayLEDs")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 7;
+	LSB_INDEX = 0;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("DisplayLEDs[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+SIGNAL("DisplayLEDs[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+SIGNAL("DisplayLEDs[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+SIGNAL("DisplayLEDs[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+SIGNAL("DisplayLEDs[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+SIGNAL("DisplayLEDs[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+SIGNAL("DisplayLEDs[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "DisplayLEDs";
+}
+
+TRANSITION_LIST("BCDNos[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 400.0;
+			LEVEL 1 FOR 400.0;
+			LEVEL 0 FOR 200.0;
+		}
+	}
+}
+
+TRANSITION_LIST("BCDNos[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
+			LEVEL 0 FOR 200.0;
+		}
+	}
+}
+
+TRANSITION_LIST("BCDNos[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+		}
+	}
+}
+
+TRANSITION_LIST("BCDNos[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 4.179;
+			LEVEL X FOR 2.703;
+			LEVEL 1 FOR 49.921;
+			LEVEL 0 FOR 49.466;
+			LEVEL 1 FOR 100.058;
+			LEVEL 0 FOR 0.175;
+			LEVEL 1 FOR 0.35;
+			LEVEL 0 FOR 49.981;
+			LEVEL 1 FOR 149.29;
+			LEVEL 0 FOR 0.52;
+			LEVEL 1 FOR 99.6;
+			LEVEL 0 FOR 100.11;
+			LEVEL 1 FOR 0.125;
+			LEVEL 0 FOR 199.777;
+			LEVEL 1 FOR 0.364;
+			LEVEL 0 FOR 0.263;
+			LEVEL 1 FOR 49.921;
+			LEVEL 0 FOR 49.466;
+			LEVEL 1 FOR 93.731;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.564;
+			LEVEL X FOR 2.45;
+			LEVEL 1 FOR 199.725;
+			LEVEL 0 FOR 99.916;
+			LEVEL 1 FOR 0.465;
+			LEVEL 0 FOR 50.093;
+			LEVEL 1 FOR 49.195;
+			LEVEL 0 FOR 0.606;
+			LEVEL 1 FOR 99.514;
+			LEVEL 0 FOR 100.207;
+			LEVEL 1 FOR 0.004;
+			LEVEL 0 FOR 200.275;
+			LEVEL 1 FOR 191.986;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 5.11;
+			LEVEL X FOR 2.044;
+			LEVEL 1 FOR 100.645;
+			LEVEL 0 FOR 49.894;
+			LEVEL 1 FOR 249.411;
+			LEVEL 0 FOR 0.406;
+			LEVEL 1 FOR 99.717;
+			LEVEL 0 FOR 100.025;
+			LEVEL 1 FOR 0.164;
+			LEVEL 0 FOR 199.738;
+			LEVEL 1 FOR 100.645;
+			LEVEL 0 FOR 49.894;
+			LEVEL 1 FOR 42.307;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 3.802;
+			LEVEL X FOR 2.686;
+			LEVEL 1 FOR 49.994;
+			LEVEL 0 FOR 49.392;
+			LEVEL 1 FOR 100.133;
+			LEVEL 0 FOR 0.1;
+			LEVEL 1 FOR 0.424;
+			LEVEL 0 FOR 49.908;
+			LEVEL 1 FOR 49.484;
+			LEVEL 0 FOR 0.565;
+			LEVEL 1 FOR 49.994;
+			LEVEL 0 FOR 49.767;
+			LEVEL 1 FOR 99.674;
+			LEVEL 0 FOR 100.035;
+			LEVEL 1 FOR 0.198;
+			LEVEL 0 FOR 199.704;
+			LEVEL 1 FOR 0.438;
+			LEVEL 0 FOR 0.19;
+			LEVEL 1 FOR 49.994;
+			LEVEL 0 FOR 49.392;
+			LEVEL 1 FOR 94.126;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 3.762;
+			LEVEL X FOR 2.675;
+			LEVEL 1 FOR 49.955;
+			LEVEL 0 FOR 50.045;
+			LEVEL 1 FOR 49.955;
+			LEVEL 0 FOR 150.045;
+			LEVEL 1 FOR 49.955;
+			LEVEL 0 FOR 50.045;
+			LEVEL 1 FOR 49.955;
+			LEVEL 0 FOR 350.045;
+			LEVEL 1 FOR 49.955;
+			LEVEL 0 FOR 50.045;
+			LEVEL 1 FOR 49.955;
+			LEVEL 0 FOR 43.608;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 3.861;
+			LEVEL X FOR 2.676;
+			LEVEL 1 FOR 49.99;
+			LEVEL 0 FOR 149.65;
+			LEVEL 1 FOR 99.801;
+			LEVEL 0 FOR 0.559;
+			LEVEL 1 FOR 49.99;
+			LEVEL 0 FOR 49.79;
+			LEVEL 1 FOR 99.661;
+			LEVEL 0 FOR 100.053;
+			LEVEL 1 FOR 0.177;
+			LEVEL 0 FOR 199.724;
+			LEVEL 1 FOR 0.416;
+			LEVEL 0 FOR 0.189;
+			LEVEL 1 FOR 49.99;
+			LEVEL 0 FOR 143.473;
+		}
+	}
+}
+
+TRANSITION_LIST("DisplayLEDs[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 3.671;
+			LEVEL X FOR 2.412;
+			LEVEL 0 FOR 99.674;
+			LEVEL 1 FOR 100.045;
+			LEVEL 0 FOR 0.171;
+			LEVEL 1 FOR 99.744;
+			LEVEL 0 FOR 0.639;
+			LEVEL 1 FOR 49.922;
+			LEVEL 0 FOR 49.835;
+			LEVEL 1 FOR 99.604;
+			LEVEL 0 FOR 100.125;
+			LEVEL 1 FOR 0.101;
+			LEVEL 0 FOR 199.809;
+			LEVEL 1 FOR 0.331;
+			LEVEL 0 FOR 99.674;
+			LEVEL 1 FOR 94.243;
+		}
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "BCDNos";
+	EXPAND_STATUS = EXPANDED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 1, 2, 3, 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "BCDNos[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "BCDNos[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "BCDNos[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "BCDNos[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
+	CHILDREN = 6, 7, 8, 9, 10, 11, 12;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "DisplayLEDs[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

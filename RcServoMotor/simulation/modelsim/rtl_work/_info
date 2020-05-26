@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ajayb/QuartusProjects/RcServoMotor/simulation/modelsim
+Erc_servo_motor_tb
+Z1 w1590480495
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/ajayb/QuartusProjects/RcServoMotor/RC_Servo_Motor_TB.vhd
+Z5 FC:/Users/ajayb/QuartusProjects/RcServoMotor/RC_Servo_Motor_TB.vhd
+l0
+L4
+VBeW]eVZ7DlO]Tg146cTXc3
+!s100 1FR;RG=N^?gfX@1>nTa8L0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1590480534
+!i10b 1
+Z8 !s108 1590480534.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ajayb/QuartusProjects/RcServoMotor/RC_Servo_Motor_TB.vhd|
+Z10 !s107 C:/Users/ajayb/QuartusProjects/RcServoMotor/RC_Servo_Motor_TB.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+DEx4 work 17 rc_servo_motor_tb 0 22 BeW]eVZ7DlO]Tg146cTXc3
+l26
+L7
+VAElalJ8_Qco4EaEJ0cJ?A2
+!s100 LWH69f7QQATM<2gX:BV_Y2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eservo_control
+Z13 w1590480309
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z15 8C:/Users/ajayb/QuartusProjects/RcServoMotor/Servo_Control.vhd
+Z16 FC:/Users/ajayb/QuartusProjects/RcServoMotor/Servo_Control.vhd
+l0
+L5
+VljUd]d2>@mEL@WVj4YX402
+!s100 d23=E;AQic3:4z4TNP;G30
+R6
+31
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/ajayb/QuartusProjects/RcServoMotor/Servo_Control.vhd|
+Z18 !s107 C:/Users/ajayb/QuartusProjects/RcServoMotor/Servo_Control.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R14
+R2
+R3
+DEx4 work 13 servo_control 0 22 ljUd]d2>@mEL@WVj4YX402
+l21
+L14
+VQHW;;RS2AL7;;NKdZ4<_Z0
+!s100 z<GI<D;bC7?RdH2e^H=@T2
+R6
+31
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12

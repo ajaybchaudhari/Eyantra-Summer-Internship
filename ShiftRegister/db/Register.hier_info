@@ -1,0 +1,29 @@
+|UNIVERSAL_SHIFT_REGISTER
+CLOCK => Q[0]~reg0.CLK
+CLOCK => Q[1]~reg0.CLK
+CLOCK => Q[2]~reg0.CLK
+CLOCK => Q[3]~reg0.CLK
+CLEAR => Q[0]~reg0.ACLR
+CLEAR => Q[1]~reg0.ACLR
+CLEAR => Q[2]~reg0.ACLR
+CLEAR => Q[3]~reg0.ACLR
+SL_IN => Mux3.IN2
+SR_IN => Mux0.IN2
+MODE[0] => Mux0.IN4
+MODE[0] => Mux1.IN4
+MODE[0] => Mux2.IN4
+MODE[0] => Mux3.IN4
+MODE[1] => Mux0.IN3
+MODE[1] => Mux1.IN3
+MODE[1] => Mux2.IN3
+MODE[1] => Mux3.IN3
+DATA[0] => Mux3.IN5
+DATA[1] => Mux2.IN5
+DATA[2] => Mux1.IN5
+DATA[3] => Mux0.IN5
+Q[0] <> Q[0]~reg0
+Q[1] <> Q[1]~reg0
+Q[2] <> Q[2]~reg0
+Q[3] <> Q[3]~reg0
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 26 15:16:02 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
+Revision Name : RC_Servo_Motor
+Top-level Entity Name : SERVO_CONTROL
+Family : Cyclone IV E
+Total logic elements : 22
+    Total combinational functions : 22
+    Dedicated logic registers : 11
+Total registers : 11
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

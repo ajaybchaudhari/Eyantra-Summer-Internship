@@ -1,0 +1,6 @@
+|two_way_switch
+A => OP.IN0
+B => OP.IN1
+OP << OP.DB_MAX_OUTPUT_PORT_TYPE
+
+
